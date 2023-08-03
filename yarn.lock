@@ -512,6 +512,11 @@ listify@^1.0.0:
   resolved "https://registry.npmjs.org/listify/-/listify-1.0.3.tgz"
   integrity sha512-083swF7iH7bx8666zdzBColpgEuy46HjN3r1isD4zV6Ix7FuHfb/2/WVnl4CH8hjuoWeFF7P5KkKNXUnJCFEJg==
 
+loader@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/loader/-/loader-2.1.1.tgz#8848b12a3f00572e5a4249333ccdac79773fb402"
+  integrity sha512-Z6nHbyKiECMexVUmpIAVXp+f+8okRtfiMAQ9j0eTtImCghxSqQwrbeSiAyCYKBnfvRlgXLdQt0tPuaZmcBQzpw==
+
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/locate-path/-/locate-path-5.0.0.tgz"
