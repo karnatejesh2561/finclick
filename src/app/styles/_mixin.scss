@@ -1,0 +1,124 @@
+$colors: (
+    green: #95C15C,
+    orange: #ff5e14,
+    blue_medium: #5375A8,
+    blue: #246df5,
+    white:#fff,
+    black:#000,
+    white_smoke:#f3f3f3,
+    sky_blue: #9bb2da,
+    dark_blue: #264F7F,
+    gray: #dedede,
+    dim_green:#63c6b1,
+    dark_eclipse:#121c45,
+    dark_voilet:#3a4259,
+    light_gray:#444,
+    ice_color:#f6faff,
+    cyan_blue:#eff6ff,
+    yellow:#9bb3da,
+    border_color:#c1c1c1,
+    opacity_gray:#b7b7b7,
+    opacity_black:#232222,
+);
+
+$primaryFont: var(--font-opensans);
+$secondaryFont: var(--font-manrope);
+$teritaryFont: var(--font-kaushanscript);
+
+$sm: 767px;
+$md: 992px;
+$lg: 1024px;
+$lgl: 1320px;
+$xl: 1441px;
+
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin desktop_small {
+    @media (max-width: #{$lgl}) {
+        @content;
+    }
+}
+
+@mixin small-desktop {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin from-tab {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin till-large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
+@mixin tiny {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin xl-tiny {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@mixin uiLightBtn {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    margin: 5px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+}

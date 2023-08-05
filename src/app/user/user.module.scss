@@ -1,0 +1,104 @@
+@import '../styles/_mixin.scss';
+
+.user_container {
+    padding: 60px 0px;
+
+    .table_data {
+        width: 100%;
+
+        .user_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 20px;
+
+            .title {
+                font-size: 54px;
+                font-weight: 800px;
+                line-height: 1.5
+            }
+
+            .input_block {
+                position: relative;
+
+                .input_field {
+                    outline: none;
+                    border: 1px solid #dedede;
+                    height: 30px;
+                    padding: 20px;
+                    padding-left: 30px;
+                    background-color: #f4f4f6;
+                    border-radius: 5px;
+
+                    &::placeholder {
+                        font-size: 16px;
+                        color: #aeaeb0;
+                    }
+                }
+
+                .icon {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 8px;
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        fill: #aeaeb0;
+                    }
+                }
+            }
+        }
+
+        .rows_names {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 20px;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+
+            .field_names {
+                width: calc(100% - 30px);
+                margin: 15px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 1.3;
+            }
+        }
+
+    }
+    .tables{
+        width: 100%;
+        .rows_data {
+           
+            border-bottom: 1px solid #dedede;
+            
+            .rows_head {
+                padding: 20px 0px;
+                text-align: left;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.3;
+                color: #aeaeb0;
+    
+            }
+        }
+    
+        .rows_data_sub {
+            border-bottom: 1px solid #dedede;
+    
+            .rows_head_wrapper {
+                padding: 20px 0px;
+                text-align: left;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.3;
+                text-transform: capitalize;
+            }
+        }
+    }
+    
+}

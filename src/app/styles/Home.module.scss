@@ -1,0 +1,524 @@
+@import '../styles/_mixin.scss';
+
+.container {
+    position: relative;
+    z-index: 9999;
+    background-color: #fff;
+
+    .video_container {
+        display: flex;
+        min-height: calc(100vh - 100px);
+        position: relative;
+        width: 100%;
+    }
+
+    .section_block {
+        margin: 110px 0px;
+        position: relative;
+        z-index: 99;
+
+        &.services_box {
+            margin: 30px 0px;
+        }
+
+        @include mobile {
+            margin: 55px 0px;
+        }
+
+        .wrapper {
+
+            .small_title {
+                text-align: center;
+                font-size: 18px;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+
+            .title {
+                max-width: 845px;
+                margin: 12px auto 50px auto;
+                text-align: center;
+                font-size: 42px;
+
+                @include mobile {
+                    font-size: 22px;
+                    line-height: 1.4;
+                }
+            }
+
+            .inner_section {
+                margin-right: calc(50% - 50vw);
+                overflow: hidden;
+
+                .left_block {
+                    width: calc(100%/2 - 2%);
+                    margin: 0px 1%;
+                    padding-right: 40px;
+
+                    @include tab {
+                        width: 100%;
+                        margin: 20px 0px;
+                        padding-right: 0px;
+                    }
+
+                    .small_title {
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 900;
+                        margin-bottom: 17px;
+                        letter-spacing: 0;
+                    }
+
+                    .text {
+                        margin-bottom: 30px;
+                    }
+
+                    ul {
+
+                        li {
+                            position: relative;
+                            padding-left: 20px;
+                            margin-bottom: 8px !important;
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                border: 2px solid color(yellow);
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 0px;
+                                top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .right_block {
+                    width: calc(100%/2 - 2%);
+                    margin: 0px 1%;
+
+                    @include tab {
+                        width: 100%;
+                        margin: 20px 0px;
+                    }
+
+                    .image_block {
+                        height: 420px;
+
+                        img {
+                            object-fit: cover;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .who_are_we {
+        margin: 110px 0px;
+        position: relative;
+        z-index: 99;
+
+        &.services_box {
+            margin: 0px;
+        }
+
+        @include tab {
+            margin: 55px 0px;
+        }
+
+        .wrapper {
+
+            .inner_section {
+                display: flex;
+
+                @include desktop_small {
+                    flex-direction: column;
+                }
+
+                .content {
+                    width: calc(100%/2 - 2%);
+                    margin: 0px 1%;
+
+                    @include desktop_small {
+                        width: 100%;
+                        margin: 0px 0px;
+                        margin-bottom: 0px;
+                    }
+
+                    .title {
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        font-weight: 200;
+                        font-size: 16px;
+                        letter-spacing: 8.4px;
+                        margin-bottom: 33px;
+                        padding: 9px 0 9px 20px;
+                        border-left: 3px solid color(yellow);
+                    }
+
+                    .sub_text {
+                        line-height: 1.27;
+                        font-family: "Manrope", sans-serif;
+                        font-weight: 800;
+                        font-size: 54px;
+                        margin-bottom: 19px;
+                        letter-spacing: -2.7px;
+
+                        @include mobile {
+                            font-size: 36px;
+                            letter-spacing: inherit;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 20px;
+                        letter-spacing: .5px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #444;
+                        opacity: 0.9;
+                    }
+                }
+
+                .right_block {
+                    width: calc(100%/2 - 2%);
+                    margin: 0px 1%;
+
+                    @include desktop_small {
+                        width: 100%;
+                        margin: 20px 0px;
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        margin-top: 110px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: #f1f0f0;
+            height: 100%;
+            width: 100%;
+            top: 30%;
+        }
+
+        @include mobile {
+            margin-top: 55px;
+        }
+
+        .wrapper {
+            background-image: url('/images/services/Gallary-1-Our-Services-Steel-Structure-scaled.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 603px;
+            position: relative;
+            width: 100%;
+
+            @include mobile {
+                height: 450px;
+            }
+        }
+
+
+        .content {
+            max-width: 896px;
+            background-color: #f1f0f0;
+            padding: 50px 100px;
+            margin-top: -260px;
+            position: relative;
+            margin-left: 86px;
+
+            @include tab {
+                max-width: 494px;
+                padding: 40px 20px;
+                margin-left: 38px;
+                margin-top: -143px;
+            }
+
+            @include mobile {
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            .title {
+                text-transform: uppercase;
+                line-height: 20px;
+                font-weight: 400;
+                letter-spacing: 8.4px;
+                margin-bottom: 33px;
+                padding: 9px 0 9px 20px;
+                border-left: 3px solid color(yellow);
+            }
+
+            .sub_text {
+                line-height: 1.27;
+                font-family: $Manrope;
+                font-weight: 800;
+                font-size: 54px;
+                margin-bottom: 19px;
+                letter-spacing: -2.7px;
+
+                @include mobile {
+                    font-size: 36px;
+                }
+            }
+
+            .text {
+                margin-bottom: 20px;
+                letter-spacing: .5px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #444;
+                opacity: 0.9;
+
+                @include tab {
+                    font-size: 16px;
+                }
+            }
+
+            .btn_grp {
+                display: flex;
+                flex-wrap: wrap;
+
+                .btn_normal {
+                    margin-right: 30px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 2.92px;
+                    padding: 12px 30px;
+                    color: #000;
+                    border: 1px solid rgba(0, 0, 0, 0.05);
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: none;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    cursor: pointer;
+
+                    @include tab {
+                        margin: 0px;
+                        width: 100%;
+                        margin-bottom: 12px;
+                        white-space: nowrap;
+                    }
+
+                    &.orange {
+                        color: #fff;
+                        background-color: color(dark_voilet);
+                    }
+                }
+            }
+        }
+    }
+
+    .join_section {
+        margin-top: 110px;
+        padding-bottom: 110px;
+
+        @include tab {
+            margin-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        @include mobile {
+            margin-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        .wrapper {
+            position: relative;
+
+            .image_box {
+                background-image: url('/images/services/about_01.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                height: 753px;
+                box-shadow: 0 32px 34px rgba(0, 0, 0, .3);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    background-color: #000;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                }
+
+                @include tab {
+                    height: 450px;
+                }
+            }
+
+            .content {
+                position: absolute;
+                left: 102px;
+                z-index: 1;
+                top: 156px;
+
+                @include tab {
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                    margin-top: 50px;
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: .6em;
+                    text-transform: uppercase;
+                    padding-left: 30px;
+                    color: #fff;
+                    margin-bottom: 37px;
+                    border-left: 3px solid color(yelloww);
+
+                    @include tab {
+                        color: #000;
+                    }
+                }
+
+                .sub_box {
+                    padding-left: 30px;
+                    border-left: 3px solid color(white);
+
+                    @include tab {
+                        padding-left: 0px;
+                    }
+
+                    .sub_text {
+                        font-size: 54px;
+                        line-height: 1.27;
+                        margin-bottom: 19px;
+                        font-weight: 800;
+                        color: #fff;
+                        font-family: $Manrope;
+                        letter-spacing: -2.7px;
+
+                        @include tab {
+                            color: #000;
+                            font-size: 22px;
+                            line-height: 1.32;
+                            letter-spacing: -.83px;
+
+                        }
+                    }
+
+                    .text {
+                        color: #fff;
+                        font-weight: 800;
+                        font-size: 174px;
+                        line-height: 174px;
+                        font-family: $Manrope;
+                        text-transform: uppercase;
+                        margin-bottom: 33px;
+
+                        @include tab {
+                            display: none;
+                        }
+                    }
+
+                    .btn_grp {
+                        display: flex;
+                        align-items: center;
+
+                        @include mobile {
+                            flex-direction: column;
+                        }
+
+                        .btn_normal {
+                            padding: 17px 34px 16px;
+                            font-size: 14px;
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            transition: .4s ease-out;
+                            border: 1px solid color(dark_voilet);
+                            border-radius: 55px;
+                            text-transform: uppercase;
+                            letter-spacing: 2.92px;
+                            color: #fff;
+                            line-height: 1.2;
+                            height: 55px;
+                            white-space: nowrap;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: color(dark_voilet);
+                            font-weight: 700;
+
+                            @include mobile {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery {
+        margin-top: 110px;
+
+        .wrapper {
+
+            .small_title {
+                text-align: center;
+                font-size: 18px;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+
+            .title {
+                max-width: 845px;
+                margin: 5px auto 50px auto;
+                text-align: center;
+                font-size: 42px;
+
+                @include mobile {
+                    font-size: 22px;
+                    line-height: 1.4;
+                }
+            }
+
+            .inner_section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: calc(100% + 2%);
+                margin-left: -1%;
+
+                @include mobile {
+                    width: 100%;
+                    margin: 0px;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
